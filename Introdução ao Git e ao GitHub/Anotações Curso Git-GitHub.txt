@@ -1,0 +1,9 @@
+Git
+Sha1
+Blobs
+Tree Commit
+
+ls-a (mostra arquivos ocultos)
+Git init
+Git Add
+Git commit
