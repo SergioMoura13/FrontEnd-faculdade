@@ -1,0 +1,2 @@
+Git init - Cria um novo repositorio no git
+Git commit - é usado para criar um instantâneo das alterações preparadas em um cronograma de um histórico de projetos do Git.
