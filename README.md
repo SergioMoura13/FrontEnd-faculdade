@@ -1,4 +1,4 @@
-# dio-desafio-git
+# FrontEnd
 Curso Git/GitHub - Desafio
 
 ## Links Úteis
