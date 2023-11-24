@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dados do Agendamento</title>
+</head>
+<body>
+  <h1>Dados do Agendamento</h1>
+  <div id="dados-container">
+    <!-- Dados do formulário serão exibidos aqui -->
+  </div>
+
+  <script>
+    const queryParams = new URLSearchParams(window.location.search);
+    const dadosContainer = document.getElementById('dados-container');
+
+    if (queryParams.has('erro')) {
+      alert('Erro: Preencha todos os campos antes de enviar o formulário.');
+    } else {
+      // Exiba os dados na página
+      const dadosHtml = `
+        <p><strong>Nome:</strong> ${queryParams.get('nome')}</p>
+        <p><strong>Endereço:</strong> ${queryParams.get('endereco')}</p>
+        <p><strong>Telefone:</strong> ${queryParams.get('telefone')}</p>
+        <p><strong>Data de Agendamento:</strong> ${queryParams.get('dataAgendamento')}</p>
+      `;
+      dadosContainer.innerHTML = dadosHtml;
+    }
+  </script>
+</body>
+</html>
